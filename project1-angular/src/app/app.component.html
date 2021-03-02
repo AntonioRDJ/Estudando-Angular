@@ -1,0 +1,7 @@
+
+<div>
+  <h2>Clicks: <span [class]="clickStatus">{{ clicks }}</span></h2>
+</div>
+
+
+<app-counter (changeValue)="sumClicks($event)"></app-counter>

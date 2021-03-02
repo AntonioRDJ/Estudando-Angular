@@ -1,0 +1,25 @@
+<h2>Contador</h2>
+<div class="input-group mb-3">
+
+    <div class="input-group-prepend" id="button-addon3">
+        <button class="btn btn-outline-secondary" type="button" (click)="decreasesTen()">
+            - <span class="badge badge-light">10</span>
+        </button>
+        <button class="btn btn-outline-secondary" type="button" (click)="decreasesOne()">
+            - <span class="badge badge-light">1</span>
+        </button>
+    </div>
+
+    <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" aria-describedby="button-addon3"
+    [(ngModel)]="value" readonly>
+
+    <div class="input-group-prepend" id="button-addon3">
+        <button class="btn btn-outline-secondary" type="button" (click)="incrementOne()">
+            + <span class="badge badge-light">1</span>
+        </button>
+        <button class="btn btn-outline-secondary" type="button" (click)="incrementTen()">
+            + <span class="badge badge-light">10</span>
+        </button>
+    </div>
+
+</div>
